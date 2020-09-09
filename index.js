@@ -1,35 +1,44 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-ver (votingAge=18)
-if(votingAge>n){console.log(true);
-}
-else{console.log(false)}
+//var votingAge=17
+//if(votingAge>18){console.log(true);
+
+//else{console.log(false)}
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+ //var n = 'blue' 
+ //var r = 'red'
 
+ //if (n == 'blue') { 
+  //   r = 'purple'
 
+//console.log(r)
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
+//var str = "1999";
+//console.log(parseInt(str))
 
 
 
 //Task d: Write a function to multiply a*b 
 
+//function phil(a,b) {return a*b
 
-
+//console.log(phil( 4, 4))
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-
+//function age( h, d)
+//{return h * 7}
+//console.log(age(24))
 
 
 
@@ -37,6 +46,28 @@ else{console.log(false)}
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
+ //function dogbowl(weight, age) {
+   //  let food
+   // if (age >= 1) {
+    //    if (weight <= 5) { food = weight * .05 
+
+      //  } 
+        //else if (weight <= 10 && weight >= 6 ) {
+     //       food = weight * .04
+        //} 
+        //else if (weight <= 15 && weight >= 11) {
+       //     food = weight * .03
+       // }
+        //else {
+       //     food = weight * .02
+       // }
+   // }
+    // else {food = "puppy"
+    
+     
+    //return food
+//}
+   // console.log(dogbowl(15,1)) --------------function
 
 //feeding requirements
 // adult dogs at least 1 year 
@@ -62,22 +93,51 @@ else{console.log(false)}
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+//const rock = 2;
+//const paper = 0;
+//const scissors = 1;
+//let message;
+//let npc;
 
-  
-  
+//function game(num) {
+  //  return npc= Math.floor(Math.random() * (num));}
 
+    //console.log(game (3));
+
+    //function rules(choice) {
+      //  if (choice == 0 && npc == 2) {
+       //     return message = 'loss!';
+       // }
+       // else if (choice == 2 && npc == 0){
+        //    return message = 'npc wins';
+       // }
+        //else if (choice == npc) {
+          //  return message = 'tie';
+       // }
+        //else if (choice > npc) {
+          //  return message = 'WInner!';
+       // }
+        //else if (choice < npc) {
+         //   return message = 'loser!';
+        //}
+
+    //}
+//console.log (rules(paper))
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-
+ //function KMtoMI( K, m)
+ //   {return K / 1.6}
+// console.log(KMtoMI(24))
 
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
-
+//function ftcm(ft, cm)
+//{return ft * 30.48}
+//console.log(ftcm(5))
 
 
 /************************************************************** Task 6 **************************************************************/
@@ -85,9 +145,16 @@ else{console.log(false)}
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+function carsong(n) {
+var ct = 0
+for (let counter = 99; counter > 1; counter--)
 
 
 
+
+console.log( (counter), "bottles of soda on the wall", (counter), "bottles of soda, take one down pass it around" ,(counter), "bottles of soda on the wall", counter)
+}
+console.log(carsong(99))
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -98,9 +165,25 @@ else{console.log(false)}
 //60s should be D 
 //and anything below 60 should be F
   
-
+//function grade (num) {
+  //  if (num >= 90) {
+  //      return "A"
+  //  }
+  //  else if (num >= 80) {
+ //       return "B"
+  //  }
+  //  else if (num >= 70) {
+  //      return "C"
+  //  }
+  //  else if (num >= 60) {
+  //      return "D"
+  //  }
+  //  else {
+  //      return "F"
+  //  }
+//}
   
-  
+  //console.log(grade(5))
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
