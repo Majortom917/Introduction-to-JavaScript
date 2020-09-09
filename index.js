@@ -1,6 +1,9 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-
+ver (votingAge=18)
+if(votingAge>n){console.log(true);
+}
+else{console.log(false)}
 
 
 
